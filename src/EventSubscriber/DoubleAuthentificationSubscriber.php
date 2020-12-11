@@ -8,7 +8,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace App\EventSuscriber;
+namespace App\EventSubscriber;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
@@ -19,7 +19,7 @@ use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInt
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 use Symfony\Component\Security\Guard\Token\PostAuthenticationGuardToken;
 
-class DoubleAuthentificationSuscriber implements EventSubscriberInterface
+class DoubleAuthentificationSubscriber implements EventSubscriberInterface
 {
     const ROLE_2FA_SUCCEED = '2FA_SUCCEED';
     const FIREWALL_NAME = 'main';
